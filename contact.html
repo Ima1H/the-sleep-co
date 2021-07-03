@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html> 
+
+<!-- This is the head of out html external resources and metadata: gridlex, fonts, etc -->
+<head> 
+
+    <!-- Title thats shows in tab of your browser : title to every project-->
+    <title> Contact the sleep co </title>
+
+    <!-- This is our font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- This is our grid stylesheet  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css" />
+
+    <!-- This is our google font stylesheet catamaran (200, 400, 500, 00 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet" /> 
+    
+    <!-- This is our css stylesheet, this always goes last -->
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<!-- This is the body of our html, this is where all of your page content goes -->
+<body> 
+
+    <!------------------------- Header --------------------------->
+    <header class="grid-middle bg-dark">
+        
+        <nav class="col-4 right"> 
+            <a href="/index.html"> Home </a>
+            <a href="/about.html"> About </a>
+        </nav>
+    
+        <div class="col-4 centered"> 
+        <a href="/index.html" class="logo">
+            <h2> the <span class="featured-text"> sleep </span> co </h2>
+        </a>
+        </div>
+    
+        <nav class="col-4 left"> 
+            <a href="/products.html"> Products </a>
+            <a href="/contact.html"> Contact Us</a>
+        </nav>
+    </header>
+
+    <!---------------------- Contact form -------------------->
+    <section class="grid">
+       
+        <div class="bg-image bg-pug col-6 tall-70">
+            <!-- background image pug sleeping -->
+        </div>
+
+        <div class="padded-5 col-6-middle"> 
+    
+            <!---------------- Header ----------------->
+            <header class="grid">
+             <div class="col-12"> 
+                <h2> Contact Us </h2>
+                <p> Contact us for a quote, help or to join our team.</p>
+              </div>
+              
+              <div class="col-4"> 
+                <p> Adress </p>
+                <a href="https://www.google.be/maps/place/55+S+Main+St,+Glen+Ellyn,+IL+60137,+Verenigde+Staten/@41.8573932,-88.0691887,17z/data=!3m1!4b1!4m5!3m4!1s0x880e53a3bfb40a27:0x6fb295065c35ac08!8m2!3d41.8573892!4d-88.067"> 55 Main St, Chicago</a>
+              </div>
+                
+              <div class="col-4">
+                <p> Phone </p>
+                <a href="tel:04555555"> 04 555 555 </a>
+              </div>
+            </header>
+            
+            <!---------------- Contact Form  ----------------->
+            <form>
+              <h1> Contact Form </h1>
+                <label for="_name" restricted>Your Name*</label>
+                <input type="text" name="_name" id="_name" placeholder="Name">
+                <label for="email" restricted>Your Email*</label>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <label for="message" restricted>Message*</label>
+                <textarea name="message" id="message" placeholder="Hey I like to get a quote.."></textarea>
+                <label for="tel">Your Telepone number</label>
+                <input type="tel" name="tel" id="tel" placeholder="Telephone Number">
+                <label for="date">Your Birthday</label>
+                <input type="date" name="date" id="date">
+                <label for="file">Upload your file</label>
+                <input type="file" name="file" id="file" class="form-file">
+               <p> * required </p>
+                <div class="right">  
+                  <button type="submit">Send Message</button>
+                </div>
+            </form>
+            
+
+    </section>
+
+
+
+    <!------------------------- Footer --------------------------->
+    <footer class="padded-5 grid-spaceBetween bg-dark"> 
+        <div class="col-4-bottom"> 
+            <a href="/index.html" class="logo">
+                <h2> the <span class="featured-text"> sleep </span> co </h2>
+            </a>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque ratione enim assumenda aliquam voluptatibus facilis aperiam distinctio iusto.</p>
+        </div>
+
+ 
+        <div class="col-5-middle">
+            <nav class="inline right"> 
+             <a href="tel:#"> 04 555 5555 </a> |
+             <a href="mailto:#"> hello@thesleep.co </a> |
+             <a href="https://www.google.com/maps?client=safari&rls=en&q=55+Main+St,+Chicago&oe=UTF-8&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjBwPnBmcfxAhWS-aQKHcArDc0Q_AUoAXoECAEQAw"> 55 Main St, Chicago </a>
+            </nav> 
+
+            <nav class="inline right">
+                <a href="https://www.facebook.com/thesleepco">
+                    <i class="fab fa-facebook-square padding-right"></i>
+                </a>
+              
+                <a href="https://www.instragram.com/thesleepco">
+                    <i class="fab fa-instagram-square padding-right"></i>
+                </a>
+
+                <a href="https://www.instragram.com/thesleepco">
+                    <i class="fab fa-youtube-square"></i>
+                </a>
+        
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
