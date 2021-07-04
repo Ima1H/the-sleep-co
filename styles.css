@@ -13,7 +13,6 @@ Navy: #192B37
 [class*="col-"] {
     padding: 0;
   }
-
 /* -------- Temporary styles for structural html ----------*/
 
 /* section {
@@ -38,6 +37,7 @@ body {
 }
 
 .padded-5 {padding: 5%;}
+.padded-2 {padding: 2%;}
 .padded-1 {padding: 1rem;}
 .padded-10{padding: 10%;}
 .padding-right {padding-right: 1rem;}
@@ -52,6 +52,10 @@ body {
     color: white;
 }
 
+.tall-10{min-height:10vh; }
+.tall-20{min-height:20vh; }
+.tall-30{min-height:30vh; }
+.tall-40{min-height:40vh; }
 .tall-50{min-height:50vh; }
 .tall-60{min-height:60vh; }
 .tall-70{min-height:70vh; }
@@ -59,21 +63,21 @@ body {
 .tall-90{min-height:90vh; }
 .tall-100{min-height:100vh;}
 
-.right {text-align: right;}
-.left {text-align: left;}
-.centered {text-align: center;}
 
 
 /* Typography styles */
         /* always set the line-heightfirst because on small screens your titles can be displayed in two lines */
-h2{
+h2 {
     font-size: 2.5rem;
     line-height: 1.1;
     margin-bottom: 1rem;
 }
 
 h3 {
+    font-size: 2rem;
     line-height: 1;
+    margin-bottom: 1rem;
+    font-weight: 400; 
 }
 
         /* note: think about efficienty: what if there are a lot of paragraphs on your site */
@@ -131,9 +135,15 @@ a:hover{
 
 /* Header and footer styles */
 
-header {
-    background-color: white;
-    padding: 1% 2%;
+header{
+    background-image: url('/images/the-sleep-co-4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header h3 {
+    font-size: 5.5rem;
+    line-height: 1 ;
 }
 
 header a {
@@ -145,7 +155,7 @@ header a {
 
 header nav a {
     padding-right: 2.5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 header h2 {
@@ -157,16 +167,6 @@ header h2 {
     font-weight: 700;
   }
 
-.header-banner{
-    background-image: url('/images/the-sleep-co-4.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.header-banner h3 {
-    font-size: 5.5rem;
-    line-height: 1 ;
-}
 
 footer a {
     display: inline-block;
@@ -184,66 +184,140 @@ footer a {
     padding: 0.5rem 0;
 }
 
-/* Background images */
+/* Background images home page */
 
-.bg-bed{
+.bg-bed {
     background-image: url('/images/the-sleep-co-3.jpg');
 }
 
-.bg-pug{
+.bg-pug {
     background-image: url('/images/the-sleep-co-1.jpg');
     background-position: 50% 35%;
 }
 
-.bg-pillow{
-    background-image: url('/images/the-sleep-co-2.jpg')
-
+.bg-pillow {
+    background-image: url('/images/the-sleep-co-2.jpg');
 }
 
+
+
+/* Background images product and about page */
+
+.bg-slatted-base {
+    background-image: url('/images/the-sleep-co-10.jpeg');
+}
+
+.bg-slatted-base-normal {
+    background-image: url('/images/the-sleep-co-7.jpg');
+}
+
+.bg-slatted-base-electric {
+    background-image: url('/images/the-sleep-co-2.jpg');
+}
+
+.bg-slatted-base-combined {
+    background-image: url('/images/the-sleep-co-6.jpg');
+}
+
+.bg-matress {
+    background-image: url('/images/the-sleep-co-4.jpg');
+}
+
+.bg-matress-allergenic {
+    background-image: url('/images/the-sleep-co-11.png');
+}
+
+.bg-mattres-large {
+    background-image: url('/images/the-sleep-co-8.jpg');
+}
+
+.bg-mattres-small {
+    background-image: url('/images/the-sleep-co-5.jpg');
+}
+
+.bg-frames {
+    background-image: url('/images/the-sleep-co-9.jpg');
+}
+
+.bg-pillow-normal {
+    background-image: url('/images/the-sleep-co-12.jpg');
+}
+
+.bg-pillow-ergonomic {
+    background-image: url('/images/the-sleep-co-13.jpg');
+}
+
+.bg-women-bed {
+    background-image: url('/images/the-sleep-co-5.jpg');
+    background-position: 50% 60%;
+}
+
+/* ------------ Products: gallery --------- */
+.gallery [class*="col-"] {
+    padding: 0%;
+  }
+
+/* Aspect Ratio   */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+
 /* Contact form */
+
 form input, form textarea{
     padding: 0.5rem;
     margin-bottom: 0.7rem;
     min-width: 100%;   
     outline: none;
     border: none;
-    background-color: rgb(230,230,230);
-    border-bottom: 1px solid #1E4969;
+    background-color:#f3e5bb ;
+    border-bottom: 1px solid #192B37;
     font-family: inherit;
     font-size: 0.9rem;
-  }
+}
   
-  form input:focus, form textaea: focus{
-    border-bottom: 1px solid #1E4969; 
-  }
+form input:focus, form textarea:focus{
+    border-bottom: 1px solid #192B37; 
+}
   
-  form label {
+form label {
     display: block;
     font-weight: 500;
-    text-transform: uppercase;
     margin-top: 1rem;
-  }
+}
   
-  form button {
-    border: 2px solid #1E4969;
-    color: #1E4969;
+form button {
+    border: 2px solid #192B37;
+    color: #192B37;
     background-color: white;
     padding: 0.5rem 2rem; 
     align-items: right;
     margin: 2rem 0rem;  
-  }
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
   
-  form button:hover {
-    border: 2px solid white;
+form button:hover {
+    border: 2px solid #1E4969;
     color: white;
     background-color: #1E4969;
-  }
-  
-  .form-file {
+}  
+
+.form-file {
     background-color: white;
     border: none;
     padding: 0.5rem 0;
-  }
+}
 
 /* Icon grid */
 

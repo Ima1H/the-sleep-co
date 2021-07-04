@@ -25,70 +25,62 @@
 <!-- This is the body of our html, this is where all of your page content goes -->
 <body> 
 
-    <!------------------------- Header --------------------------->
-    <header class="grid-middle bg-dark">
-        
-        <nav class="col-4 right"> 
+    <!------------------------- Header Banner --------------------------->
+    <header class="padded-5 grid tall-100">
+           
+        <nav class="col-4 text-right"> 
             <a href="/index.html"> Home </a>
             <a href="/about.html"> About </a>
         </nav>
     
-        <div class="col-4 centered"> 
+        <div class="col-4 text-center"> 
         <a href="/index.html" class="logo">
             <h2> the <span class="featured-text"> sleep </span> co </h2>
         </a>
         </div>
-    
-        <nav class="col-4 left"> 
+   
+        <nav class="coll-4 text-left"> 
             <a href="/products.html"> Products </a>
             <a href="/contact.html"> Contact Us</a>
-        </nav>
+        </nav> 
+        </div>
+
+        <div class="col-12 text-center"> 
+        
+
+            <h3 class="font-weight-extra-bold editable">
+                <span class="featured-text"> contact </span> the sleep co
+            </h3>
+            <h1 class="font-weight-light editable">
+                sweet dreams are just a few clicks away
+            </h1>
+        </div>
     </header>
 
     <!---------------------- Contact form -------------------->
     <section class="grid">
-       
-        <div class="bg-image bg-pug col-6 tall-70">
-            <!-- background image pug sleeping -->
-        </div>
+    
+        <div class="bg-image bg-pillow col-6 tall-50"> </div>
 
         <div class="padded-5 col-6-middle"> 
-    
-            <!---------------- Header ----------------->
-            <header class="grid">
-             <div class="col-12"> 
-                <h2> Contact Us </h2>
-                <p> Contact us for a quote, help or to join our team.</p>
-              </div>
-              
-              <div class="col-4"> 
-                <p> Adress </p>
-                <a href="https://www.google.be/maps/place/55+S+Main+St,+Glen+Ellyn,+IL+60137,+Verenigde+Staten/@41.8573932,-88.0691887,17z/data=!3m1!4b1!4m5!3m4!1s0x880e53a3bfb40a27:0x6fb295065c35ac08!8m2!3d41.8573892!4d-88.067"> 55 Main St, Chicago</a>
-              </div>
-                
-              <div class="col-4">
-                <p> Phone </p>
-                <a href="tel:04555555"> 04 555 555 </a>
-              </div>
-            </header>
             
             <!---------------- Contact Form  ----------------->
             <form>
               <h1> Contact Form </h1>
-                <label for="_name" restricted>Your Name*</label>
+                <label for="_name" restricted>Name*</label>
                 <input type="text" name="_name" id="_name" placeholder="Name">
-                <label for="email" restricted>Your Email*</label>
+                <label for="email" restricted>Email*</label>
                 <input type="email" name="email" id="email" placeholder="Email">
                 <label for="message" restricted>Message*</label>
                 <textarea name="message" id="message" placeholder="Hey I like to get a quote.."></textarea>
-                <label for="tel">Your Telepone number</label>
+                <label for="tel">Phone number</label>
                 <input type="tel" name="tel" id="tel" placeholder="Telephone Number">
-                <label for="date">Your Birthday</label>
+                <label for="date">Birthday</label>
                 <input type="date" name="date" id="date">
                 <label for="file">Upload your file</label>
                 <input type="file" name="file" id="file" class="form-file">
-               <p> * required </p>
-                <div class="right">  
+                <p> * required </p>
+                <div class="text-right">  
                   <button type="submit">Send Message</button>
                 </div>
             </form>
